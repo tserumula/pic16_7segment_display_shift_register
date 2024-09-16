@@ -1,0 +1,245 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1459 ]
+[d frameptr 6 ]
+"5 /opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 /opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 /opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"60 /home/falcon/MPLABXProjects/PIC16BatteryLevelDisplay.X/main.c
+[v _get7SegmentPattern get7SegmentPattern `(uc  1 e 1 0 ]
+"82
+[v _displayDigits displayDigits `(v  1 e 1 0 ]
+"105
+[v _setButtonInterrupt setButtonInterrupt `(v  1 e 1 0 ]
+"120
+[v _ISR ISR `II(v  1 e 1 0 ]
+"137
+[v _main main `(v  1 e 1 0 ]
+[s S89 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 /opt/microchip/mplabx/v6.20/packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8/pic/include/proc/pic16f1459.h
+[s S98 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S103 . 1 `S89 1 . 1 0 `S98 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES103  1 e 1 @11 ]
+[s S22 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"444
+[u S29 . 1 `S22 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES29  1 e 1 @12 ]
+[s S39 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"530
+[u S48 . 1 `S39 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES48  1 e 1 @14 ]
+[s S171 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1016
+[u S175 . 1 `S171 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES175  1 e 1 @140 ]
+[s S203 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1045
+[u S209 . 1 `S203 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES209  1 e 1 @141 ]
+[s S182 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1087
+[u S191 . 1 `S182 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES191  1 e 1 @142 ]
+[s S286 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1149
+[u S295 . 1 `S286 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES295  1 e 1 @145 ]
+[s S143 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 IRCF 1 0 :4:2 
+`uc 1 SPLLMULT 1 0 :1:6 
+`uc 1 SPLLEN 1 0 :1:7 
+]
+"1525
+[s S148 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 IRCF0 1 0 :1:2 
+`uc 1 IRCF1 1 0 :1:3 
+`uc 1 IRCF2 1 0 :1:4 
+`uc 1 IRCF3 1 0 :1:5 
+]
+[u S155 . 1 `S143 1 . 1 0 `S148 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES155  1 e 1 @153 ]
+"1678
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S218 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"1878
+[u S222 . 1 `S218 1 . 1 0 ]
+[v _LATAbits LATAbits `VES222  1 e 1 @268 ]
+[s S250 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"1907
+[u S256 . 1 `S250 1 . 1 0 ]
+[v _LATBbits LATBbits `VES256  1 e 1 @269 ]
+[s S229 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"1949
+[u S238 . 1 `S229 1 . 1 0 ]
+[v _LATCbits LATCbits `VES238  1 e 1 @270 ]
+"2519
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2548
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2584
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+[s S265 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"2951
+[u S274 . 1 `S265 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES274  1 e 1 @413 ]
+[s S67 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IOCBP4 1 0 :1:4 
+`uc 1 IOCBP5 1 0 :1:5 
+`uc 1 IOCBP6 1 0 :1:6 
+`uc 1 IOCBP7 1 0 :1:7 
+]
+"4099
+[s S73 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IOCBP 1 0 :4:4 
+]
+[u S76 . 1 `S67 1 . 1 0 `S73 1 . 1 0 ]
+[v _IOCBPbits IOCBPbits `VES76  1 e 1 @916 ]
+"4129
+[v _IOCBN IOCBN `VEuc  1 e 1 @917 ]
+[s S121 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IOCBF4 1 0 :1:4 
+`uc 1 IOCBF5 1 0 :1:5 
+`uc 1 IOCBF6 1 0 :1:6 
+`uc 1 IOCBF7 1 0 :1:7 
+]
+"4195
+[s S127 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IOCBF 1 0 :4:4 
+]
+[u S130 . 1 `S121 1 . 1 0 `S127 1 . 1 0 ]
+[v _IOCBFbits IOCBFbits `VES130  1 e 1 @918 ]
+"49 /home/falcon/MPLABXProjects/PIC16BatteryLevelDisplay.X/main.c
+[v _batteryDigit0 batteryDigit0 `uc  1 e 1 0 ]
+"50
+[v _batteryDigit1 batteryDigit1 `uc  1 e 1 0 ]
+"51
+[v _batteryDigit2 batteryDigit2 `uc  1 e 1 0 ]
+"53
+[v _segPattern0 segPattern0 `uc  1 e 1 0 ]
+"54
+[v _segPattern1 segPattern1 `uc  1 e 1 0 ]
+"55
+[v _segPattern2 segPattern2 `uc  1 e 1 0 ]
+"57
+[v _turnOnDisplay turnOnDisplay `uc  1 e 1 0 ]
+"137
+[v _main main `(v  1 e 1 0 ]
+{
+"224
+} 0
+"105
+[v _setButtonInterrupt setButtonInterrupt `(v  1 e 1 0 ]
+{
+"118
+} 0
+"60
+[v _get7SegmentPattern get7SegmentPattern `(uc  1 e 1 0 ]
+{
+[v get7SegmentPattern@digit digit `uc  1 p 1 wreg ]
+"63
+[v get7SegmentPattern@pattern pattern `uc  1 a 1 1 ]
+"60
+[v get7SegmentPattern@digit digit `uc  1 p 1 wreg ]
+[v get7SegmentPattern@digit digit `uc  1 p 1 0 ]
+"80
+} 0
+"82
+[v _displayDigits displayDigits `(v  1 e 1 0 ]
+{
+[v displayDigits@digit0 digit0 `uc  1 p 1 wreg ]
+"83
+[v displayDigits@i i `i  1 a 2 5 ]
+"82
+[v displayDigits@digit0 digit0 `uc  1 p 1 wreg ]
+[v displayDigits@digit1 digit1 `uc  1 p 1 0 ]
+[v displayDigits@digit2 digit2 `uc  1 p 1 1 ]
+"84
+[v displayDigits@digit0 digit0 `uc  1 p 1 4 ]
+"102
+} 0
+"120
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"135
+} 0
